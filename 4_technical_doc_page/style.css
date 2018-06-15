@@ -1,0 +1,30 @@
+body{
+	font-family:"PT Sans",sans-serif;
+	display:grid;
+	grid-template-areas:"menu main";
+	grid-template-columns:250px 1100px;
+}
+#title{
+	text-align:left;
+}
+
+#menu{
+	position:fixed;
+	border-right:1px solid black;
+	width:250px;
+	height:cover;
+}
+#menu td{
+	padding:8px;
+	border-top:1px solid black;
+}
+
+main{
+	margin-left:20px;
+}
+
+.code{
+	font-size:14px;
+	padding:15px;
+	background-color:#f7f7f7;
+}

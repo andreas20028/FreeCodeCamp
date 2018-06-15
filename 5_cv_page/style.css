@@ -1,0 +1,335 @@
+@font-face {
+    font-family: VimSM;
+    src:url(./fonts/MontereyFLF.ttf) format("opentype");
+}
+
+body{
+	background-image:url(./images/background.jpeg);
+	background-size:auto;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+}
+
+header{
+	background-color:#f5f5f0;
+	height:150px;
+	width:100%;
+}
+
+
+footer{
+	position:absolute;
+	background-color:#484848;
+	color:#D3D3D3;
+	text-align:center;
+	padding-top:1em;
+	height:40px;
+	width:100%;
+}
+footer#footer-home{
+	margin-top:100px;
+}
+footer#footer-skills{
+	margin-top:500px;
+}
+footer#footer-aboutme{
+	margin-top:100px;
+}
+footer#footer-contact{
+	margin-top:730px
+}
+
+
+#title{
+	font-family:helvetica;
+}
+
+#page-title{
+	text-align:center;
+	margin-top:40px;
+	font-size:30px;
+	text-decoration:underline overline;
+	text-decoration-color:#8B4513;
+}
+#navbar{
+	background-color:#d8d8b3;
+	height:50px;
+	width:100%;
+}
+
+#navbar h1{
+	display:block;
+	position:absolute;
+	margin-top:5px;
+	margin-left:25px;
+}
+
+#navbar nav{
+	text-align:right;
+	padding-top:15px;
+}
+#navbar a{
+	padding:7px;
+	margin-right:40px;
+	text-decoration:none;
+	color:black;
+}
+
+#navbar nav a:hover{
+	animation-name:glow;
+	animation-duration:0.5s;
+	animation-fill-mode: forwards;
+
+}
+@keyframes glow{
+	100%{
+		color:#FF0000;
+	    box-shadow: 0 0 15px #FF0000;
+	}
+}
+
+/*Intro*/
+#myphoto{
+	display:block;
+	height:250px;
+	width:250px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:100px;
+	border-radius:50%;
+}
+#myphoto:hover{
+	box-shadow:0px 0px 12px 1px white ;
+	animation-name:img-scale;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+}
+@keyframes img-scale{
+	100%{
+		transform:scale(1.1);
+	}
+}
+#intro{
+	display:block;
+	animation-name:intro;
+	animation-duration:3s;
+	animation-fill-mode:forwards;
+}
+@keyframes intro{
+	0%{
+		opacity:0.1;
+	}
+	100%{
+		opacity:1;
+		margin-top:-50px;
+	}
+}
+#intro-text{
+	display:block;
+	margin-top:50px;
+	
+	margin-left:auto;
+	margin-right:auto;
+	width:750px;
+	background-color:rgba(0,0,0,0.5);
+}
+#intro-header{
+	font-size:38px;
+	color:#daa520;
+	text-align:center;
+}
+#intro-main{
+	font-size:24px;
+	color:white;
+	text-align:center;
+}
+#intro-footer{
+	font-size:18px;
+	text-align:center;
+	color:grey;
+}
+/*#menu-link:hover{
+	animation-name:nav-blink;
+	animation-duration:1s;
+}
+@keyframes nav-blink{
+	#navbar nav{
+		0%{
+			background-color:red;
+		}
+
+}*/
+
+/*Skills*/
+#skill-container{
+	display:block;
+	margin-top:25px;
+	margin-left:auto;
+	margin-right:auto;
+	height:30px;
+	width:80%;
+	background-color:#f5f5f0;
+}
+
+#percentage{
+	color:white;
+	padding-top:5px;
+	padding-left:15px;
+	animation-name:bar-anim;
+}
+
+#skills-chart{
+	position:absolute;
+	height:300px;
+	width:1300px;
+	margin-top:100px;
+	animation-name:fade-in;
+	animation-duration:3s;
+}
+@keyframes fade-in{
+	0%{
+		opacity:0.1;
+		margin-top:400px;
+	}
+}
+
+#html-bar{
+	background-color:green;
+	height:100%;
+	width:70%;
+	animation-name:bar-anim;
+	animation-duration:3s;
+}
+#css-bar{
+	background-color:lightblue;
+	height:100%;
+	width:60%;
+	animation-name:bar-anim;
+	animation-duration:3s;
+}
+#js-bar{
+	background-color:red;
+	height:100%;
+	width:30%;
+	animation-name:bar-anim;
+	animation-duration:3s;
+}
+#cpp-bar{
+	background-color:orange;
+	height:100%;
+	width:50%;
+	animation-name:bar-anim;
+	animation-duration:3s;
+}
+
+@keyframes bar-anim{
+	0%{
+		width:0%;
+	}
+}
+
+/*Contact*/
+#logos{
+	margin-top:70px;
+}
+
+#logos img{
+	display:block;
+	height:100px;
+	width:100px;
+	margin-bottom:20px;
+	margin-right:auto;
+	margin-left:auto;
+	border-radius:50%;
+}
+#logos img:hover{
+	box-shadow:0px 0px 12px 1px white;
+	transform:scale(1.05);
+}
+
+.logo1{
+	display:block;
+	animation-name:logo1;
+	animation-duration:3s;
+}
+
+.logo2{
+	display:block;
+	animation-name:logo2;
+	animation-duration:3s;
+}
+
+@keyframes logo1{
+	0%{
+		opacity:0.1;
+		margin-left:10px;
+	}
+	100%{
+		margin-left:570px;
+		margin-right:570px;
+	}
+}
+
+@keyframes logo2{
+	0%{
+		opacity:0.1;
+		margin-left:1130px;
+	}
+	100%{
+		margin-left:570px;
+		margin-right:570px;
+	}
+}
+
+/*About Me*/
+#edu-table{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:75px;
+	height:150px;
+	animation-name:table-intro;
+	animation-duration:2s;
+	border-radius:5px;
+}
+@keyframes table-intro{
+	0%{
+		opacity:0;
+		margin-top:250px;
+	}
+}
+
+#edu-table,th, td{
+	border:3px solid #8B4513; 
+	background-color:rgba(0,0,0,0.5);
+	border-collapse:collapse; 
+}
+#edu-table td a,td{
+	text-decoration:none;
+	color:white;
+}
+
+
+#aboutme-text{
+	display:block;
+	margin-top:50px;
+	
+	margin-left:auto;
+	margin-right:auto;
+	width:750px;
+	background-color:rgba(0,0,0,0.5);
+	color:white;
+	font-size:20px;
+	border-radius:5%;
+	padding-left:25px;
+	padding-right:25px;
+	padding-top:15px;
+	padding-bottom:15px;
+	
+	animation-name:edu-text-intro;
+	animation-duration:2s;
+}
+@keyframes edu-text-intro{
+	0%{
+		opacity:0;
+	}
+}
