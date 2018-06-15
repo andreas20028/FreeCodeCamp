@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1 id="title">Survey Form</h1>
+	<form>
+		<h2 id="description">Lets us know how we cn improve FreeCodeCamp</h2>
+		
+		
+		<div id="grid">
+		<label for="name">*Name:</label> <input id="name" type="text" value="Enter your name">
+		<label for="email">*Email:</label> <input id="email" type="text" value="Enter your email">
+		<label for="age">*Age:</label> <input id="age" type="text" value="Enter your age">
+		
+		<label for="role">Which option best describes your current role?</label>
+		<select id="role">
+			<option>Student</option>
+			<option>Full-time job</option>
+			<option>Full-time learner</option>
+			<option>Other</option>
+		</select>
+		
+		<div id="recommend-label">
+		<label class="heading"><br>* How likely is that you would recommend freeCodeCamp to a friend?</label> 
+		</div>
+		<div id="recommend-cont">
+		<input type="radio" name="recommend" id="def"><label for="def">Definitely</label>
+		<input type="radio" name="recommend" id="maybe"><label for="maybe">Maybe</label>
+		<input type="radio" name="recommend" id="not"><label for="not">Not sure</label>
+		</div>
+		
+		<div id="improvement-label">
+		Things that should be improved in the future:
+		</div>
+		<div id="improvement-cont">
+		<input type="checkbox" id="front"><label for="front">Front-end Projects</label><br>
+		<input type="checkbox" id="back"><label for="back">Back-end Projects</label><br>
+		<input type="checkbox" id="data"><label for="data">Data Visualization</label><br>
+		<input type="checkbox" id="chal"><label for="chal">Challenges</label><br>
+		<input type="checkbox" id="open"><label for="open">Open Source Community</label><br>
+		<input type="checkbox" id="gitter"><label for="gitter">Gitter help rooms</label><br>
+		<input type="checkbox" id="videos"><label for="videos">Videos</label><br>
+		<input type="checkbox" id="meetups"><label for="meetups">City Meetups</label><br>
+		<input type="checkbox" id="wiki"><label for="wiki">Wiki</label><br>
+		<input type="checkbox" id="forums"><label for="forum">Forum</label><br>
+		<input type="checkbox" id="add"><label for="add">Additional Courses</label><br>
+		</div>
+		
+		<div id="comment-label">
+		Any Comments or Suggestions? 
+		</div>
+		<div id="comment-label">
+		<input id="comment" type="text" value="Enter your comment here...">
+		</div>
+		</div>
+		</div>
+		
+		<div id="submit-div">
+		<input type="submit" id="submit" value="Submit">
+		</div>
+	</form>
+</body>
+</html>

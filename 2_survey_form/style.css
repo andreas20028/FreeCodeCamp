@@ -1,0 +1,79 @@
+body{
+	background-color:hsl(168, 100%, 70%);
+	font-family:verdana;
+}
+form{
+	background-color:white;
+	height:auto;
+	width:auto;
+	text-align:left;
+	
+}
+#submit-div{
+	text-align:center;
+}	
+input,label{
+	margin-top:20px;
+	
+}
+
+select{
+	margin-top:20px;
+}
+#title{
+	text-align:center;
+}
+
+#description{
+	text-align:center;
+	font-size:18px;
+}
+
+#comment{
+	width:250px;
+	height:100px;
+}
+#submit{
+	background-color:hsl(195, 100%, 40%);
+	border-radius:10%;
+	height:40px;
+	width:80px;
+}
+#submit:hover{
+	background-color:hsl(195, 100%, 30%);
+}
+#grid{
+	padding-left:300px;
+	display:grid;
+	grid-template-columns:300px 300px;
+	align-items:center;
+	grid-template-areas:
+	"label1 cont1"
+	"label2 cont2"
+	"label3 cont3"
+	"label4 cont4"
+	"label5 cont5"
+	"label6 cont6"
+	"label7 cont7";
+}
+
+#recommend-label{
+	grid-area:label5;
+}
+#recommend-cont{
+	grid-area:cont5;
+}
+
+#rimprovement-label{
+	grid-area:label6;
+}
+#improvement-cont{
+	grid-area:cont6;
+}
+
+#comment-label{
+	grid-area:label7;
+}
+#comment-cont{
+	grid-area:cont7;
+}
